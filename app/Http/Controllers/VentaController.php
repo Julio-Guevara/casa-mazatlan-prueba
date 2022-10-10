@@ -46,8 +46,7 @@ class VentaController extends Controller
                 ];
         $venta->detalles()->create($detalles);
 
-        $ventas = Venta::paginate(3);
-        return view('ventas', ['ventas' => $ventas]);
+        return $this->index();
     }
 
 }
