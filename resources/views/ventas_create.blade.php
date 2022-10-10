@@ -9,7 +9,7 @@
 
     </head>
     <body>
-        <div class="container-sm">
+        <div class="container-sm mt-3">
             <form action="{{url('ventas')}}" method="post">
             @csrf
                 <div class="mb-3">
